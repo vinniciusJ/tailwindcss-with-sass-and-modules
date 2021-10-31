@@ -1,0 +1,43 @@
+.container{
+    @apply w-full flex flex-col items-center justify-between;
+
+    .scrollable{
+        @apply w-1/2 px-16;
+
+        border: .125rem solid var(--gray-100);
+
+        > header{
+            @apply flex flex-wrap justify-between items-center;
+
+            h1 {
+                @apply font-bold text-2xl;
+            }
+
+            > label{
+                @apply flex p-1 rounded-lg transition-colors;
+
+                border: .125rem solid var(--gray-400);   
+                
+                svg{
+                    stroke: var(--gray-400);
+                }
+
+                input{
+                    outline: none;
+                }
+
+                &:focus, &:hover{
+                    border-color: var(--gray-700);
+
+                    input::placeholder{
+                        color: var(--gray-700);
+                    }
+
+                    svg{
+                        stroke: var(--gray-700);
+                    }
+                }
+            }
+        }
+    }
+}
