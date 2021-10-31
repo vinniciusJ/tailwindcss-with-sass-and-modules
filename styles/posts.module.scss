@@ -17,7 +17,9 @@
         border-bottom: .1rem solid var(--gray-400);
 
         h1{
-            @apply text-xl capitalize mb-1;
+            @apply font-semibold text-xl capitalize mb-1;
+
+            color: var(--gray-800);
         }
 
         a{
@@ -33,5 +35,30 @@
 
     > section {
         @apply py-4;
+    }
+}
+
+.popupHeader{
+    @apply flex justify-between items-center mb-4;
+
+    border-bottom: .1rem solid var(--gray-400);
+
+    > div{
+        @apply mb-2;
+
+        h1{
+            @apply text-xl capitalize mb-2 font-semibold max-w-xl;
+            color: var(--gray-800);
+        }
+    }
+
+    a{
+        @apply text-sm hover:underline transition-colors transform-none self-start;
+
+        color: var(--gray-600);
+
+        &:hover{
+            color: var(--gray-800);
+        }
     }
 }

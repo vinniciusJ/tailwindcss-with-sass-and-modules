@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from 'axios'
 
+import Post from '../components/Post'
 import { SearchIcon } from '@heroicons/react/outline'
 
 import classes from '../styles/home.module.scss'
-import Post from '../components/Post'
 
 const Home = ({ posts }) => {
     return (
