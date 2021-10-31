@@ -2,21 +2,25 @@
     @apply w-full flex flex-col items-center justify-between;
 
     .scrollable{
-        @apply w-1/2 px-16;
+        @apply w-2/3 px-16;
 
         border: .125rem solid var(--gray-100);
 
         > header{
-            @apply flex flex-wrap justify-between items-center;
+            @apply flex flex-wrap justify-between items-center py-8;
+
+            border-bottom: .1rem solid var(--gray-400);
 
             h1 {
-                @apply font-bold text-2xl;
+                @apply font-bold text-4xl;
+
+                color: var(--gray-800)
             }
 
             > label{
                 @apply flex p-1 rounded-lg transition-colors;
 
-                border: .125rem solid var(--gray-400);   
+                border: .0125rem solid var(--gray-400);   
                 
                 svg{
                     stroke: var(--gray-400);
@@ -37,6 +41,14 @@
                         stroke: var(--gray-700);
                     }
                 }
+            }
+        }
+
+        > main{
+            @apply mt-8;
+
+            ul{
+                @apply flex flex-col gap-4;
             }
         }
     }
